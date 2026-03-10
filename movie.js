@@ -1,6 +1,6 @@
 let rating = 0
 
-// STARS FUNCTION
+// star func
 const stars = document.querySelectorAll("#stars span")
 
 stars.forEach(star => {
@@ -15,7 +15,7 @@ stars.forEach(star => {
     })
 })
 
-// tO LOAD MOVIES FROM LOCALSTORAGE
+// load
 let movies = JSON.parse(localStorage.getItem("movies")) || []
 
 displayMovies()
@@ -35,7 +35,7 @@ let existingMovie = movies.find(movie => movie.title.toLowerCase() === title.toL
 
 if(existingMovie){
 
-    // to average the rating...,.,.
+    // avg rating
     let avg = Math.round((parseInt(existingMovie.rating) + parseInt(rating)) / 2)
 
     existingMovie.year = year
