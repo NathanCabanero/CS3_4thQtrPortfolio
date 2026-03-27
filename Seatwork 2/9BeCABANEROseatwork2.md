@@ -56,19 +56,19 @@
 - Add in css ```position: relative; top: 20px; left: 20px;``` to .sidebar.
 
 - Guided Question: What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
-The .sidebar
+There was a margin of 20 px placed on the top and left of the sidebar which move the .sidebar box down and to the left 20px each from its original position.
 ### Step 2 (Fixed):
 
 - Add in css ```position: fixed; bottom: 0; width: 100%;``` to .footer.
 
 - Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
-
+The footer stays visible in the bottom even if you scroll as its position was set fixed 0px away from the bottom of the users screen
 ### Step 3 (Absolute):
 
 - Add in css ```position: absolute; top: 66px; left: 200px;``` to .content.
 
 - Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
-
+It set the position making the content box position 66 px below the true top of the website and 200 px to the left of its true left
 ### Step 4 : (Absolute)
 
 - Add in html ```<div class="notice">Notice!</div>``` and include the css below:
@@ -87,9 +87,10 @@ The .sidebar
 - Give .content a z-index: 1.
 
 - Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
-
+The noitce appears as the top was set to 60px which positions it 60 px away from the top and 400 px from the left with left set to 400px
 - Challenge: 
     * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
+    Change left:400px to left:500px which was taken by adding the width and left of the .content box
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
     * What do you observe on about the effect of z-index on .notice and .content boxes?
 
